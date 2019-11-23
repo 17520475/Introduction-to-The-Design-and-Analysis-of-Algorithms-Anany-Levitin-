@@ -5,7 +5,7 @@ using namespace std;
 int first = 0;
 long long i = 1;
 
-void Canbachai(long long n)
+void Square(long long n)
 {
 	do
 	{
@@ -20,12 +20,14 @@ void Canbachai(long long n)
 		++first;
 	}
 	i *= 10;
-	Canbachai(n *= 100);
+	Square(n *= 100);
 }
 
 int main()
 {
-	Canbachai(2);
+	int n = 0;
+	cin >> n;
+	Square(n);
 	system("pause");
 	return 0;
 }
